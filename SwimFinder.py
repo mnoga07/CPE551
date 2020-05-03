@@ -21,13 +21,11 @@ elif (str.isdigit(sys.argv[1]) == False):
     print('Given argument is not an integer. Team code must be as integer number.\n')
 
 else:
-    #if (int(sys.argv[1]) > 9826 or int(sys.argv[1]) < 1):
     if(int(sys.argv[1]) < 1):
         print('Team code out of range. Current range is [1, 9826]\n')
 
     else:
         Race_type = ['50 Free','100 Free','200 Free','500 Free','1000 Free','1650 Free','100 Back','200 Back','100 Breast','200 Breast','100 Fly','200 Fly','200 IM','400 IM']
-        #team = '313'
         team = sys.argv[1]  #get specified team code
         People = ['M','F']
         event = ['150','1100','1200','1500','11000','11650','2100','2200','3100','3200','4100','4200','5200','5400']
